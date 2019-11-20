@@ -1,0 +1,2 @@
+# RuMa-NET
+AI project
