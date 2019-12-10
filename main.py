@@ -15,6 +15,7 @@ import shutil
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
+
 r = sr.Recognizer()
 mic = sr.Microphone()
 
