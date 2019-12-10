@@ -19,6 +19,7 @@ import tensorflow as tf
 import gzip
 import pickle
 import konlpy
+from konlpy.tag import Okt
 
 r = sr.Recognizer()
 mic = sr.Microphone()
@@ -27,10 +28,10 @@ with mic as source:
   audio = r.listen(source)
 print(r.recognize_google(audio.language='ko-KR'))
 
-x = np.arange(0,6,0.1)
-y = np.sin(x)
+okt = Okt()
 
-plt.plot(x,y)
-plt.show()
+text = "이 프로젝트를 시작해볼까"
 
+print(okt.morphs(text))
+print(okt.morphs(text, stem=True))
 
