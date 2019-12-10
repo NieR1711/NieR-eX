@@ -15,6 +15,10 @@ import shutil
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
+import tensorflow as tf
+import gzip
+import pickle
+import konlpy
 
 r = sr.Recognizer()
 mic = sr.Microphone()
